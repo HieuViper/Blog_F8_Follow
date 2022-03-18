@@ -1,0 +1,25 @@
+<h3>Sửa khóa học</h3>
+<form action="/me/stored/update/{{course._id}}" method="POST">
+    <div class="form-group">
+        <label for="name">Tên khóa học</label>
+        <input name="name" value="{{course.name}}" type="text" class="form-control" id="name" 
+            placeholder="Tên khóa học">
+    </div>
+    <div class="form-group">
+        <label for="description">Mô tả khóa học</label>
+        <textarea name="description" class="form-control" id="description" 
+            placeholder="Mô tả">{{course.description}}</textarea>
+    </div>
+    <div class="form-group">
+        <label for="vidId">VideoId</label>
+        <input name="videoId" type="text" value="{{course.videoId}}" class="form-control" id="vidId" 
+            placeholder="VideoID">
+    </div>
+    <div class="form-group">
+        <label for="level">Level</label>
+        <input name="level" type="text" value="{{course.level}}" class="form-control" id="level" 
+            placeholder="Trình độ">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Lưu lại</button>
+</form>
